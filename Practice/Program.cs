@@ -10,27 +10,16 @@ namespace Practice
     {
         public static void Main(string[] args)
         {
-            //Student studentAge = new Student();
-            //studentAge.Age();
+            var student1 = new Student("Amy", Convert.ToDateTime("2000/02/18"));
+            student1.Age();
 
-            //Employee workers = new Employee();
-            //workers.EmployeeInfo();
+            Console.WriteLine(student1);
 
-            Console.WriteLine("Enter a number: ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            var student2 = new Student("Tom", Convert.ToDateTime("1982/04/17"));
+            student2.Age();
 
-            Console.WriteLine("Enter a number: ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter a number: ");
-            int num3 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter a number: ");
-            int num4 = Convert.ToInt32(Console.ReadLine());
-
-            int average = (num1 + num2 + num3 + num4) / 4;
-            Console.WriteLine("Average is: " + average);
-
+            Console.WriteLine(student2);
         }
+
     }
 }

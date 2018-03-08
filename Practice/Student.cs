@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,28 +10,28 @@ namespace Practice
 {
     class Student
     {
-        public void Age()
+        public string Name { get; }
+        public DateTime DateOfBirth { get;}
+
+        public Student(string name, DateTime dateOfBirth)
         {
-            DateTime dateOfBirth = Convert.ToDateTime("1998/08/07");
-            string age = CalculateAge(dateOfBirth);
-
-            Console.WriteLine("You are " + age + " years old.");
-
-
-            string CalculateAge(DateTime birthDate)
-            {
-                int years = DateTime.Now.Year - birthDate.Year;
-
-                if (birthDate.Month > DateTime.Now.Month || birthDate.Month == DateTime.Now.Month && birthDate.Day > DateTime.Now.Day)
-                {
-                    years--;
-                }
-
-                return years.ToString();
-            }
-
+            Name = name;
+            DateOfBirth = dateOfBirth;
         }
-       
-       
+
+        public int Age()
+        {
+            var now = DateTime.Today;
+            var age = now.Year - DateOfBirth.Year;
+
+            if (DateOfBirth.AddYears(age) > now) age--;
+
+            return age;
+        }
+
+        public override string ToString()
+        {
+            return $"Name: {Name} and age is: {Age()}";
+        }
     }
 }
