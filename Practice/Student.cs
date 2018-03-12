@@ -25,7 +25,6 @@ namespace Practice
             var age = now.Year - DateOfBirth.Year;
 
             if (DateOfBirth.AddYears(age) > now) age--;
-
             return age;
         }
 

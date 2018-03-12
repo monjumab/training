@@ -21,12 +21,6 @@ namespace Practice
             Salary = salary;
         }
 
-        //public string EmpInfo()
-        //{
-            
-            
-        //}
-
         public override string ToString()
         {
             return $"Employee ID: {Id}, Name: {Name}, Salary: {Salary}.";
