@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnqiueWords", "UnqiueWords\UnqiueWords.csproj", "{18907537-00D4-4B03-BE26-C1FADC42DFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqueWordsTest", "UniqueWordsTest\UniqueWordsTest.csproj", "{72DE33FB-82BE-4412-85B7-D7772F516F6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18907537-00D4-4B03-BE26-C1FADC42DFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18907537-00D4-4B03-BE26-C1FADC42DFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18907537-00D4-4B03-BE26-C1FADC42DFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18907537-00D4-4B03-BE26-C1FADC42DFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72DE33FB-82BE-4412-85B7-D7772F516F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72DE33FB-82BE-4412-85B7-D7772F516F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72DE33FB-82BE-4412-85B7-D7772F516F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72DE33FB-82BE-4412-85B7-D7772F516F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1DBA76D-8A86-4CA8-8A29-A5F9275E6303}
+	EndGlobalSection
+EndGlobal
